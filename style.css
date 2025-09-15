@@ -1,3 +1,4 @@
+/* Réinitialisation */
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +11,7 @@ body {
   color: #333;
 }
 
-/* Navbar */
+/* ================= NAVBAR ================= */
 header {
   background: #FFA500;
   padding: 1rem 2rem;
@@ -31,23 +32,37 @@ nav {
   color: #fff;
 }
 
-nav ul {
+/* Cacher le checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Icône burger */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Menu classique */
+.menu {
   display: flex;
   list-style: none;
   gap: 1.5rem;
 }
 
-nav a {
+.menu a {
   text-decoration: none;
   font-weight: bold;
   color: #fff;
 }
 
-nav a:hover {
+.menu a:hover {
   text-decoration: underline;
 }
 
-/* Hero */
+/* ================= HERO ================= */
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -68,7 +83,7 @@ nav a:hover {
 }
 .hero-text p {
   font-size: 1.1rem;
-  margin-bottom: 2.5rem; /* plus d’espace avant le bouton */
+  margin-bottom: 2.5rem;
 }
 .hero-btn {
   margin-top: 1.5rem;
@@ -89,6 +104,32 @@ nav a:hover {
   max-width: 600px;
   width: 100%;
 }
+
+/* ================= RESPONSIVE NAVBAR ================= */
+@media (max-width: 768px) {
+  .menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #FFA500;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    display: none;
+  }
+  .menu li {
+    margin-bottom: 10px;
+  }
+  /* Icône burger visible */
+  .menu-icon {
+    display: block;
+  }
+  /* Afficher le menu si la case est cochée */
+  #menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+}
+
 
 /* Problèmes */
 .problems {
