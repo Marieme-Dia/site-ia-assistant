@@ -1,27 +1,32 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assistant IA Réseaux Sociaux</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome pour les icônes -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Navbar -->
   <header>
-  <nav aria-label="Navigation principale">
-    <div class="logo">Assistant IA</div>
-    <ul>
-      <li><a href="#accueil">Accueil</a></li>
-      <li><a href="#probleme">Problème</a></li>
-      <li><a href="#solution">Solution</a></li>
-      <li><a href="#fonctionnalites">Fonctionnalités</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <nav aria-label="Navigation principale">
+      <div class="logo">Assistant IA</div>
+
+      <!-- Menu burger (checkbox hack) -->
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <i class="fa fa-bars"></i>
+      </label>
+
+      <ul class="menu">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#probleme">Problème</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Accueil -->
   <section id="accueil" class="hero" role="banner" aria-label="Section d'accueil">
@@ -150,4 +155,3 @@
   </footer>
 </body>
 </html>
-
