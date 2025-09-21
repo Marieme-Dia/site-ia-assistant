@@ -19,11 +19,11 @@
       </label>
 
       <ul class="menu">
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#probleme">Problème</a></li>
-        <li><a href="#solution">Solution</a></li>
-        <li><a href="#fonctionnalites">Fonctionnalités</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#accueil" onclick="document.getElementById('menu-toggle').checked=false">Accueil</a></li>
+        <li><a href="#probleme" onclick="document.getElementById('menu-toggle').checked=false">Problème</a></li>
+        <li><a href="#solution" onclick="document.getElementById('menu-toggle').checked=false">Solution</a></li>
+        <li><a href="#fonctionnalites" onclick="document.getElementById('menu-toggle').checked=false">Fonctionnalités</a></li>
+        <li><a href="#contact" onclick="document.getElementById('menu-toggle').checked=false">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -119,10 +119,10 @@
       <h2 id="titre-contact" class="fade-up">NOUS CONTACTER</h2>
       <form class="contact-form" role="form" aria-label="Formulaire de contact">
         <div class="form-left">
-          <input id="nom" type="text" placeholder="Votre nom" required>
-          <input id="email" type="email" placeholder="Votre email" required>
-          <input id="tel" type="tel" placeholder="Votre téléphone" required>
-          <textarea id="message" placeholder="Votre message" required></textarea>
+          <input id="nom" type="text" placeholder="Entrer Votre nom" required>
+          <input id="email" type="email" placeholder="Enter Votre email" required>
+          <input id="tel" type="tel" placeholder="Entrer Votre téléphone" required>
+          <textarea id="message" placeholder="Entrer Votre message" required></textarea>
           <button type="submit" class="btn-submit">Envoyer</button>
         </div>
         <div class="form-right">
