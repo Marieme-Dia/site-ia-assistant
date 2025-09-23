@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -8,14 +8,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- HEADER -->
   <header>
     <nav aria-label="Navigation principale">
       <div class="logo">Assistant IA</div>
 
-      <!-- Menu burger -->
+      <!-- Menu burger (checkbox hack) -->
       <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+      <label for="menu-toggle" class="menu-icon">
+        <i class="fa fa-bars"></i>
+      </label>
 
       <ul class="menu">
         <li><a href="#accueil" onclick="document.getElementById('menu-toggle').checked=false">Accueil</a></li>
@@ -27,7 +28,7 @@
     </nav>
   </header>
 
-  <!-- ACCUEIL -->
+  <!-- Accueil -->
   <section id="accueil" class="hero" role="banner" aria-label="Section d'accueil">
     <div class="hero-text">
       <h1 class="fade-up delay-1">Assistant IA pour la gestion des réseaux sociaux</h1>
@@ -39,18 +40,18 @@
     <img src="IA.png" alt="Illustration assistant IA" class="hero-img slide-right delay-2">
   </section>
 
-  <!-- PROBLÈME -->
+  <!-- Problème -->
   <section id="probleme" aria-labelledby="titre-probleme">
     <h2 id="titre-probleme" class="fade-up">PROBLÈMES RENCONTRÉS</h2>
     <div class="problems">
       <div class="problem-box fade-up delay-1">Les réseaux sociaux génèrent un volume important de messages difficiles à traiter rapidement.</div>
       <div class="problem-box fade-up delay-2">Le manque de réactivité entraîne une perte d’opportunités commerciales et une mauvaise expérience client.</div>
       <div class="problem-box fade-up delay-3">Programmer du contenu prend du temps et surcharge les petites équipes.</div>
-      <div class="problem-box fade-up delay-4">Les outils existants sont souvent trop coûteux ou peu adaptés aux réalités locales.</div>
+      <div class="problem-box fade-up delay-2">Les outils existants sont souvent trop coûteux ou peu adaptés aux réalités locales.</div>
     </div>
   </section>
 
-  <!-- SOLUTION -->
+  <!-- Solution -->
   <section id="solution" class="solution" aria-labelledby="titre-solution">
     <h2 id="titre-solution" class="fade-up">NOTRE SOLUTION</h2>
     <div class="solution-container">
@@ -59,15 +60,14 @@
       </div>
       <div class="solution-text slide-right delay-2">
         <p>
-          Notre assistant IA répond automatiquement aux commentaires et messages privés, 
-          alerte en cas de messages sensibles et planifie vos publications. 
-          Un vrai gain de temps pour booster votre visibilité et fidéliser vos clients.
+          Notre assistant IA répond automatiquement aux commentaires et aux messages privés, alerte en cas de messages sensibles, 
+          et planifie vos publications. Un vrai gain de temps pour booster votre visibilité et fidéliser vos clients.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- FONCTIONNALITÉS -->
+  <!-- Fonctionnalités -->
   <section id="fonctionnalites" aria-labelledby="titre-fonctionnalites">
     <h2 id="titre-fonctionnalites" class="fade-up">FONCTIONNALITÉS PRINCIPALES</h2>
     <div class="features">
@@ -86,14 +86,13 @@
         <h3>Programmation</h3>
         <p>Planifiez vos publications sur plusieurs plateformes.</p>
       </div>
-      <div class="feature fade-up delay-4">
+      <div class="feature fade-up delay-3">
         <i class="fa-solid fa-chart-line" style="color:#1976d2"></i>
         <h3>Reporting</h3>
         <p>Rapports quotidiens et statistiques d’engagement.</p>
       </div>
     </div>
 
-    <!-- EXTRA -->
     <div class="extra-grid">
       <div class="cibles">
         <h3>🎯 Les cibles visées</h3>
@@ -104,6 +103,7 @@
           <li>PME/PMI cherchant à renforcer leur visibilité</li>
         </ul>
       </div>
+
       <div class="valeur-ajoutee">
         <h3>💡 Valeur ajoutée</h3>
         <div class="value-card purple">Solution simple et accessible, même pour les non-techniciens.</div>
@@ -111,54 +111,76 @@
         <div class="value-card green">Respect de la confidentialité et sécurité des données.</div>
       </div>
     </div>
-  </section>
-
-  <!-- WORKFLOW -->
-  <section id="workflow" class="workflow-section" aria-labelledby="workflow-title">
-    <h3 id="workflow-title">Comment ça marche</h3>
-    <div class="workflow-container" role="group" aria-label="Étapes du fonctionnement">
-      <!-- Étapes -->
-      <div class="workflow-steps" role="list">
-        <div class="step" style="--i:1" role="listitem">
-          <div class="number">1</div>
-          <div class="text"><h4>COMMENTAIRE OU MESSAGE</h4><p>Le client écrit sur la page.</p></div>
-        </div>
-        <div class="step" style="--i:2" role="listitem">
-          <div class="number">2</div>
-          <div class="text"><h4>IA</h4><p>Analyse d'intention & génération de réponse.</p></div>
-        </div>
-        <div class="step" style="--i:3" role="listitem">
-          <div class="number">3</div>
-          <div class="text"><h4>RÉPONSE</h4><p>Publication automatique ou mise en attente.</p></div>
-        </div>
-        <div class="step" style="--i:4" role="listitem">
-          <div class="number">4</div>
-          <div class="text"><h4>RETOUR AU RESPONSABLE</h4><p>Notification & tableau de bord pour suivi.</p></div>
-        </div>
-        <div class="step" style="--i:5" role="listitem">
-          <div class="number">5</div>
-          <div class="text"><h4>PROGRAMMATION</h4><p>Planification des contenus pour publication.</p></div>
+    <section id="workflow" class="workflow-section" aria-labelledby="workflow-title">
+  <h3 id="workflow-title">Comment ça marche </h3>
+  
+  <div class="workflow-container" role="group" aria-label="Étapes du fonctionnement">
+    
+    <!-- Colonne gauche -->
+    <div class="workflow-steps" role="list">
+      <div class="step" style="--i:1" role="listitem" aria-label="Étape 1 commentaire">
+        <div class="number" aria-hidden="true">1</div>
+        <div class="text">
+          <h4>COMMENTAIRE OU MESSAGE</h4>
+          <p>Le client écrit sur la page.</p>
         </div>
       </div>
 
-      <!-- Illustration -->
-      <div class="workflow-image" role="img" aria-label="Illustration conversation IA sur smartphone">
-        <img src="IA (5).png" alt="Conversation IA sur smartphone">
+      <div class="step" style="--i:2" role="listitem" aria-label="Étape 2 intelligence artificielle">
+        <div class="number" aria-hidden="true">2</div>
+        <div class="text">
+          <h3>IA</h3>
+          <p>Analyse d'intention & génération de réponse.</p>
+        </div>
+      </div>
+
+      <div class="step" style="--i:3" role="listitem" aria-label="Étape 3 réponse automatique">
+        <div class="number" aria-hidden="true">3</div>
+        <div class="text">
+          <h3>RÉPONSE</h3>
+          <p>Publication automatique ou mise en attente.</p>
+        </div>
+      </div>
+
+      <div class="step" style="--i:4" role="listitem" aria-label="Étape 4 retour au responsable">
+        <div class="number" aria-hidden="true">4</div>
+        <div class="text">
+          <h3>RETOUR AU RESPONSABLE</h3>
+          <p>Notification & tableau de bord pour suivi.</p>
+        </div>
+      </div>
+
+      <div class="step" style="--i:6" role="listitem" aria-label="Étape 5 programmation de contenu">
+        <div class="number" aria-hidden="true">5</div>
+        <div class="text">
+          <h3>PROGRAMME DU CONTENU</h3>
+          <p>L'utilisateur planifie ses contenus pour la publication sur les réseaux sociaux.</p>
+        </div>
       </div>
     </div>
+
+    <!-- Colonne droite -->
+    <div class="workflow-image" role="img" aria-label="Illustration conversation IA sur smartphone">
+      <img src="IA (5).png" alt="Illustration d'une conversation avec IA sur smartphone">
+    </div>
+  </div>
+</section>
+
   </section>
 
-  <!-- CONTACT -->
+  <!-- Contact -->
   <section id="contact" class="contact" aria-labelledby="titre-contact">
     <div class="container">
       <h2 id="titre-contact" class="fade-up">NOUS CONTACTER</h2>
       <form class="contact-form" role="form" aria-label="Formulaire de contact">
         <div class="form-left">
-          <div class="contact-illustration"><img src="contact.png" alt="Illustration de contact"></div>
+          <div class="contact-illustration">
+            <img src="contact.png" alt="Illustration de contact">
+          </div>
         </div>
         <div class="form-right">
           <input id="nom" type="text" placeholder="Entrer votre nom" required>
-          <input id="email" type="email" placeholder="Entrer votre email" required>
+          <input id="email" type="email" placeholder="Enter votre email" required>
           <input id="tel" type="tel" placeholder="Entrer votre téléphone" required>
           <textarea id="message" placeholder="Entrer votre message" required></textarea>
           <button type="submit" class="btn-submit">Envoyer</button>
@@ -167,11 +189,11 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <div class="footer-container">
       <div class="footer-logo">Assistant IA</div>
-      <div class="footer-links">
+      <div class="footer-links" role="navigation" aria-label="Liens du pied de page">
         <a href="#accueil">Accueil</a>
         <a href="#probleme">Problème</a>
         <a href="#solution">Solution</a>
@@ -179,9 +201,9 @@
         <a href="#contact">Contact</a>
       </div>
       <div class="footer-socials">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </div>
     <p>&copy; 2025 Assistant IA - Tous droits réservés</p>
