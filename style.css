@@ -285,13 +285,13 @@ section h2 {
 /* Conteneur global */
 .workflow-container {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 90px; /* 🔥 espace entre gauche et droite */
+  align-items: center;        /* centre verticalement */
+  justify-content: center;    /* centre horizontalement */
+  gap: 50px;                  /* espace équilibré */
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-  border-radius: 15px;
+  padding: 20px;
 }
 
 /* Colonne gauche : étapes */
